@@ -5,6 +5,15 @@ This project page is for our said paper, the page represents a user-guide for re
 
 [2024.06.21] The project page has been built!
 
+## Directory Structure
+
+| File                                      | Description                                                                  |
+| ----------------------------------------- | ---------------------------------------------------------------------------- |
+| **Scrapped Data**                         | Python scripts to scrap data and store in "Scrapped Data/data" folder        |
+|                        |         |
+| **LICENSE**                               | Need to update  |
+| **README.md**                             | This must ring a bell.                                                       |
+
 ## WorkfLow
 
 #### Step 1: Run .py files given in the Scrapped Data folder to scrap the fact-checking data directly from the offcial websites of independent fact-checking organizations
