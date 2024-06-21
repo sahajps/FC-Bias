@@ -7,10 +7,10 @@ This project page is for our said paper, the page represents a user-guide for re
 
 ## Directory Structure
 
-| File                                      | Description                                                                  |
+| File/Folder                               | Description                                                                  |
 | ----------------------------------------- | ---------------------------------------------------------------------------- |
 | **Scrapped Data**                         | Python scripts to scrap data and store in "Scrapped Data/data" folder        |
-|                        |         |
+| **Cleaned Data**                        | Run notebooks named preprocessing_USA.ipynb and preprocessing_IN.ipynb to get the preprocessed into Cleaned Data folder |
 | **LICENSE**                               | Need to update  |
 | **README.md**                             | This must ring a bell.                                                       |
 
