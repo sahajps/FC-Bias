@@ -1,4 +1,4 @@
-# Quantifying Political Neutrality in Independent Fact-Checking Beyond the Left-Right Spectrum
+# Independent fact-checking organizations exhibit a departure from political neutrality
 This project page is for our said paper, the page represents a user-guide for reproducibilty of results and contains the fact-checking data from shortlished independent fact-checking organizations.
 
 ## What's New
