@@ -11,6 +11,8 @@ This project page is for our said paper, the page represents a user-guide for re
 | ----------------------------------------- | ---------------------------------------------------------------------------- |
 | **Scrapped Data**                         | Python scripts to scrap data and store in "Scrapped Data/data" folder        |
 | **Cleaned Data**                        | Run notebooks named preprocessing_USA.ipynb and preprocessing_IN.ipynb to get the preprocessed into Cleaned Data folder |
+| **RQ1/Claim_Norm_chatgpt**  | Run RQ1_Claim_Norm_Prompt_ChatGPT.py and RQ1_Claim_Norm_Prompt_ChatGPT_5W.py return the Claim and What-Why sentences from the fact-check articles  |
+| **RQ1/CosineScores** | By running RQ1_embed_all.py, parallel_all_test.py and all_gen_cosine_new.py in order returns the cosine similarity of the inter-organization articles which were published in 15-days window. |
 | **LICENSE**                               | Need to update  |
 | **README.md**                             | This must ring a bell.                                                       |
 
