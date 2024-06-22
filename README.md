@@ -1,36 +1,26 @@
-# Independent fact-checking organizations exhibit a departure from political neutrality
-This project page is for our said paper, the page represents a user-guide for reproducibilty of results and contains the fact-checking data from shortlished independent fact-checking organizations.
+# _**Independent fact-checking organizations exhibit a departure from political neutrality**_
+Welcome to the project page for our paper. This page serves as a user guide for the reproducibility of results and contains the fact-checking data from shortlisted independent fact-checking organizations.
 
-## What's New
+## 🌟 What's New
+🗓 [2024.06.21] The project page has been built!
 
-[2024.06.21] The project page has been built!
+## 📂 Directory Structure
 
-## Directory Structure
-
-| File/Folder                               | Description                                                                  |
-| ----------------------------------------- | ---------------------------------------------------------------------------- |
-| **Scrapped Data**                         | Python scripts to scrap data and store in "Scrapped Data/data" folder        |
-| **Cleaned Data**                        | Run notebooks named preprocessing_USA.ipynb and preprocessing_IN.ipynb to get the preprocessed into Cleaned Data folder |
-| **RQ1/Claim_Norm_chatgpt**  | Run RQ1_Claim_Norm_Prompt_ChatGPT.py and RQ1_Claim_Norm_Prompt_ChatGPT_5W.py return the Claim and What-Why sentences from the fact-check articles  |
-| **RQ1/CosineScores** | By running RQ1_embed_all.py, parallel_all_test.py and all_gen_cosine_new.py in order returns the cosine similarity of the inter-organization articles which were published in 15-days window. |
-| **RQ2/Topic Sentiment Data** | Entity_Image_ChatGPT.py extract entitites and their populated image (positive, negative or neutral) in this folder |
-| **RQ2/Top Topics** | This enlists the top 100 entities with the label if these are political or not. This annotaion is done manually. |
-| **RQ2/RQ2_Org_Wise.ipynb** | It returns the overall polarity (all political entities and dates) of organizations |
-| **Graph Data** | For each organization RQ2/RQ2_Topic_Wise.ipynb first finds top 5 entites and returns PS data for all years and year-wise to plot the graph |
-| **LICENSE**                               | Need to update  |
-| **README.md**                             | This must ring a bell.                                                       |
-
-## WorkfLow
-
-#### Step 1: Run .py files given in the Scrapped Data folder to scrap the fact-checking data directly from the offcial websites of independent fact-checking organizations
-```bash
-python3 <python_file_name>
-```
-#### Step 2: Run notebooks named preprocessing_USA.ipynb and preprocessing_IN.ipynb to get the preprocessed into Cleaned Data folder
-
-### Step 3: 
-
-### Step 4:
+| **File/Folder**                   | **Description & Work-flow**                                                                                             |
+|-------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| 📂 **Scrapped Data**                | Python scripts to scrape data and store in the `Scrapped Data/data` folder.                                 |
+| 📂 **Cleaned Data**                 | Run notebooks `preprocessing_USA.ipynb` and `preprocessing_IN.ipynb` to get the preprocessed data into the `Cleaned Data` folder. |
+| 📂 **RQ1/Claim_Norm_chatgpt**       | Run `RQ1_Claim_Norm_Prompt_ChatGPT.py` and `RQ1_Claim_Norm_Prompt_ChatGPT_5W.py` to return the Claim and What-Why sentences from the fact-check articles. |
+| 📂 **RQ1/CosineScores**             | Running `RQ1_embed_all.py`, `parallel_all_test.py`, and `all_gen_cosine_new.py` in order returns the cosine similarity of the inter-organization articles published within a 15-day window. |
+| 📂 **RQ2/Topic Sentiment Data**     | `Entity_Image_ChatGPT.py` extracts entities and their populated image (positive, negative, or neutral) in this folder. |
+| 📂 **RQ2/Top Topics**               | Enlists the top 100 entities with the label if these are political or not. This annotation is done manually. |
+| 📄 **RQ2/RQ2_Org_Wise.ipynb**       | Returns the overall polarity (all political entities and dates) of organizations.                         |
+| 📂 **RQ2/Graph Data**               | For each organization, `RQ2/RQ2_Topic_Wise.ipynb` first finds the top 5 entities and returns PS data for all years and year-wise to plot the graph. |
+| 📂 **RQ1/EntityIntersection**       | Contains entity mention data within the 15-day windows generated using the `EntityCoverage.py` script.    |
+| 📊 **Graphs**                       | Contains the .ipynb files to generate and save them into the same folder.                                   |
+| 📂 **HumanEval**                    | Contains `Human_Annotation_Data.xlsx` file, which is evaluated by human annotators, and `HE_Scores.ipynb` shows the results of human evaluation. |
+| 📜 **LICENSE**                      | MIT License Copyright (c) 2024 Singh et al.                                                                 |
+| 📄 **README.md**                    | This must ring a bell.                                                                                       |
 
 
 ## Dataset
@@ -62,14 +52,5 @@ Cleaned data contains same data as Scrapped Data with basic text preprocessing a
 If you find this project useful, please cite it using the following format: 
 
 ```bash
-@inproceedings{,
-  author       = {},
-  title        = {},
-  booktitle    = {},
-  pages        = {},
-  publisher    = {},
-  year         = {},
-  url          = {}
-}
 
 ```
