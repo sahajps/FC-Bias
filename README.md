@@ -2,6 +2,7 @@
 Welcome to the project page for our paper. This page serves as a user guide for the reproducibility of results and contains the fact-checking data from shortlisted independent fact-checking organizations.
 
 ## 🌟 What's New
+🗓 [2024.06.28] Required python modules' versions to be updated soon 🔜
 🗓 [2024.06.21] The project page has been built!
 
 ## 📂 Directory Structure
