@@ -1,0 +1,7 @@
+FCB_env
+*.out
+RQ1/Intermediate Output Files/*.json
+RQ1/Intermediate Output Files/*.xlsx
+Human Evaluation/HE_sentiment.xlsx
+Human Evaluation/HumanEvaluation.ipynb
+try.ipynb
