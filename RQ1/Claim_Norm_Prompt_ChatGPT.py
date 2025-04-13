@@ -64,6 +64,9 @@ for f in files:
 
     
     df['claim_norm'] = claim_norm
+    # adding date column as MM DD, YYYY eg. May 1, 2022
+    df.insert(1, 'date', df['date_month'] + ' ' + df['date_day'].astype(str) + ', ' + df['date_year'].astype(str))
+    df.drop(columns=['date_year', 'date_month', 'date_day'], inplace=True)
     df.to_excel('Claim Norm Data/'+org_name+".xlsx", index=False)
     print(claim_not_json)
     sys.stdout.flush()

@@ -64,6 +64,9 @@ for f in files:
                 claim_norm[i]="ERROR DECODING:: " + response["choices"][0]["message"]["content"].lower()
 
     df['claim_norm'] = claim_norm
+    # adding date column as MM DD, YYYY eg. May 1, 2022
+    df.insert(1, 'date', df['date_month'] + ' ' + df['date_day'].astype(str) + ', ' + df['date_year'].astype(str))
+    df.drop(columns=['date_year', 'date_month', 'date_day'], inplace=True)
     df.to_excel('Claim Norm Data/'+org_name+"_5W.xlsx", index=False)
     print(claim_not_json)
     sys.stdout.flush()
